@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand"><svg width="100" height="50" viewBox="0 0 310 113" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo">
+            <path d="M265.561 108V109.5H267.061H279.129H280.629V108V58.2955C280.629 55.0026 281.417 52.1277 282.961 49.6254C284.557 47.0609 286.709 45.062 289.444 43.6158L289.45 43.6129C292.207 42.1404 295.368 41.3864 298.97 41.3864C300.498 41.3864 301.932 41.5002 303.275 41.7239L303.294 41.7272L303.314 41.7299C304.802 41.9376 305.654 42.0808 305.97 42.1598L307.834 42.6257V40.7045V28.4318V27.0743L306.483 26.9393C305.745 26.8654 304.694 26.8132 303.355 26.7789C302.019 26.7446 300.897 26.7273 299.993 26.7273C295.016 26.7273 290.503 28.0121 286.498 30.5977C283.896 32.2766 281.797 34.303 280.22 36.6739V29.4545V27.9545H278.72H267.061H265.561V29.4545V108Z" stroke="white" stroke-width="3"/>
+            <path d="M222.198 94.886L222.203 94.8826C225.301 93.126 227.581 90.8914 229.102 88.19L229.109 88.1787L229.109 88.1787C230.689 85.4295 231.466 82.5665 231.466 79.5682V71.1608C231.022 71.3334 230.536 71.4957 230.014 71.6493L230.005 71.652L229.995 71.6547C228.227 72.1499 226.195 72.5867 223.906 72.9682L223.896 72.9698L223.887 72.9712C221.66 73.3139 219.483 73.6224 217.357 73.8968L217.346 73.8981L217.336 73.8993C215.26 74.1375 213.582 74.341 212.298 74.5099L212.296 74.5101C209.248 74.9078 206.412 75.5521 203.786 76.4383L203.776 76.4419L203.776 76.4419C201.288 77.2607 199.336 78.4816 197.864 80.0742L222.198 94.886ZM222.198 94.886C219.204 96.6007 215.454 97.5 210.875 97.5M222.198 94.886L210.875 97.5M210.875 97.5C206.291 97.5 202.635 96.4943 199.807 94.5911C197.164 92.7583 195.807 90.0796 195.807 86.3182C195.807 83.5213 196.547 81.5014 197.863 80.0751L210.875 97.5ZM194.844 108.386L194.854 108.39C199.129 110.366 203.864 111.341 209.034 111.341C213.743 111.341 217.827 110.639 221.235 109.173C224.538 107.753 227.255 106 229.331 103.886C230.124 103.079 230.837 102.282 231.466 101.493V108V109.5H232.966H245.034H246.534V108V56.25C246.534 49.8691 245.491 44.6124 243.28 40.5948C241.129 36.6873 238.382 33.6946 235.013 31.6948C231.801 29.7682 228.445 28.4901 224.95 27.8763C221.616 27.2518 218.626 26.9318 215.989 26.9318C211.896 26.9318 207.745 27.4963 203.538 28.6177C199.276 29.7286 195.343 31.6983 191.747 34.5111C188.102 37.3543 185.235 41.2917 183.11 46.25L182.481 47.7168L183.984 48.2535L195.439 52.3444L196.727 52.8047L197.304 51.5635C198.505 48.9753 200.624 46.4598 203.762 44.0403C206.687 41.7862 210.84 40.5682 216.398 40.5682C221.723 40.5682 225.407 41.9068 227.75 44.3089L227.757 44.3155C230.168 46.7566 231.466 50.2548 231.466 55.0227V55.4318C231.466 56.9689 230.952 57.7565 230.135 58.2145L230.129 58.2184L230.122 58.2224C229.034 58.8478 227.107 59.3838 224.162 59.719C221.18 60.0276 217.299 60.4893 212.525 61.1032L212.521 61.1036C208.829 61.5867 205.154 62.2422 201.498 63.07C197.795 63.8815 194.391 65.1203 191.293 66.7939C188.102 68.5175 185.54 70.9116 183.629 73.9615C181.66 77.0685 180.739 81.0208 180.739 85.7045C180.739 91.0579 181.991 95.7216 184.566 99.6221L184.57 99.6275C187.115 103.444 190.551 106.365 194.844 108.386Z" stroke="white" stroke-width="3"/>
+            <path d="M107.975 105.924L107.981 105.928C113.259 109.411 119.33 111.136 126.142 111.136C131.333 111.136 135.651 110.28 138.985 108.445L138.985 108.445L138.996 108.438C142.159 106.661 144.67 104.612 146.46 102.261L146.467 102.252C147.428 100.971 148.268 99.8087 148.983 98.7681V108V109.5H150.483H162.142H163.642V108V3.27272V1.77272H162.142H150.074H148.574V3.27272V38.594C147.967 37.7494 147.283 36.8245 146.521 35.8202C144.796 33.461 142.332 31.4255 139.204 29.6829C135.927 27.8021 131.597 26.9318 126.347 26.9318C119.47 26.9318 113.349 28.6552 108.036 32.1375C102.732 35.6137 98.6201 40.5283 95.686 46.8206C92.745 53.1279 91.3011 60.5125 91.3011 68.9318C91.3011 77.4176 92.7444 84.8524 95.6846 91.1935L95.686 91.1964C98.6184 97.4852 102.71 102.414 107.975 105.924ZM146.322 53.8737L146.323 53.8773C147.946 58.0658 148.778 63.0056 148.778 68.7273C148.778 74.5141 147.93 79.5584 146.271 83.8873C144.617 88.1657 142.232 91.4524 139.143 93.8174C136.103 96.1117 132.344 97.2955 127.778 97.2955C123.012 97.2955 119.128 96.0462 116.026 93.6291C112.889 91.1243 110.483 87.7455 108.829 83.4351C107.197 79.059 106.369 74.1624 106.369 68.7273C106.369 63.357 107.181 58.5638 108.778 54.3274C110.396 50.0893 112.78 46.8012 115.908 44.4L115.909 44.3987C119.009 42.0118 122.931 40.7727 127.778 40.7727C132.424 40.7727 136.219 41.9456 139.257 44.2086L139.257 44.2086L139.265 44.2145C142.343 46.4755 144.705 49.6698 146.322 53.8737Z" stroke="white" stroke-width="3"/>
+            <path d="M18.5373 105.924L18.5432 105.928C23.8218 109.411 29.893 111.136 36.7046 111.136C41.8952 111.136 46.2133 110.28 49.5473 108.445L49.5474 108.445L49.5586 108.438C52.7217 106.661 55.2321 104.612 57.0227 102.261L57.0296 102.252C57.9907 100.971 58.8302 99.8087 59.5455 98.7681V108V109.5H61.0455H72.7046H74.2046V108V3.27272V1.77272H72.7046H60.6364H59.1364V3.27272V38.594C58.5297 37.7494 57.8452 36.8245 57.0839 35.8202C55.3583 33.461 52.8942 31.4255 49.7668 29.6829C46.4891 27.8021 42.1599 26.9318 36.9091 26.9318C30.0326 26.9318 23.9114 28.6552 18.5982 32.1375C13.2944 35.6137 9.18257 40.5283 6.2485 46.8206C3.30747 53.1279 1.86365 60.5125 1.86365 68.9318C1.86365 77.4176 3.30688 84.8524 6.24714 91.1935L6.2485 91.1964C9.18089 97.4852 13.2722 102.414 18.5373 105.924ZM56.8841 53.8737L56.8855 53.8773C58.5089 58.0658 59.3409 63.0056 59.3409 68.7273C59.3409 74.5146 58.4926 79.5591 56.8327 83.8883C55.1794 88.1662 52.7942 91.4526 49.7057 93.8174C46.6652 96.1117 42.9067 97.2955 38.3409 97.2955C33.5748 97.2955 29.69 96.0462 26.5881 93.6291C23.4518 91.1243 21.0456 87.7456 19.3917 83.4353C17.7597 79.0591 16.9318 74.1625 16.9318 68.7273C16.9318 63.357 17.7437 58.5638 19.34 54.3274C20.9581 50.0893 23.3424 46.8012 26.4702 44.4L26.472 44.3987C29.5718 42.0118 33.4938 40.7727 38.3409 40.7727C42.9867 40.7727 46.7819 41.9456 49.8199 44.2086L49.8198 44.2086L49.8278 44.2145C52.9053 46.4755 55.2672 49.6698 56.8841 53.8737Z" stroke="white" stroke-width="3"/>
+            </svg>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portofolio">Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!--Akhir Navbar-->
+<!--Home-->
+<section id="home" class="home">
+  <div class="container">
+      <div class="content-img">
+          <img src="img/foto.png" alt="foto" data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      </div>
+      <h1>Dino Ananda Restyanto</h1>
+      <h2><span id="typed"></span></h2>
+      <div class="Medsos" data-aos="zoom-in" data-aos-duration="1500">
+          <a href="https://instagram.com/dinoanandarr?igshid=OGQ5ZDc2ODk2ZA=="><i id="icon" class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/6285213101386"><i id="icon" class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:dinoananda.restyanto@gmail.com"><i id="icon" class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+</section>
+<!--Akhir Home-->
+<!--About-->
+<section class="about" id="about">
+  <div class="container mb-5">
+    <h1 >About <span1>Me</span></h1>
+    <p data-aos="fade-down" data-aos-duration="1100" data-aos-offset="10">Hello! I'm glad you've stopped by my "About Me" page. I am Dino Ananda, and I'd like to introduce myself briefly. I will also explain my educational journey and my hobbies. I'm an enthusiastic individual, striving to live a life full of joy and be of service to others. I believe that life is an endless journey, and I'm always looking for opportunities to grow and develop.</p>
+  <div class="data">
+      <div class="row justify-content-between">
+        <div class="col-5" data-aos="fade-left" data-aos-duration="1100">
+          <h3>Data Personal</h3>
+          <ul>
+            <li>
+                <a>Birthday</a> : 
+                <span> 07 JUNI 2006</span>
+
+            </li>
+            <li>
+                <a>Phone</a> :
+                <span>+62 85213101386</span>
+                
+            </li>
+            <li>
+                <a>Email</a> :
+                <span>dinoananda@gmail.com</span>
+          
+            </li>
+            <li>
+                <a>Website</a> :
+                <span> www.example.com</span>
+                
+            </li>
+            <li>
+                <a>Country</a> :
+                <span> Indonesia</span>
+            </li>
+        </ul>
+        </div>
+        <div class="col-5" data-aos="fade-right" data-aos-duration="1100">
+          <div class="hobi">
+            <h3>My Hobby</h3>
+            <ul>
+              <li>
+                <i id="icon" class="fa-solid fa-gamepad"></i>
+                <span>Games</span>
+              </li>
+              <li>
+                <i  id="icon"class="fa-solid fa-car"></i>
+                <span>Auto</span>
+              </li>
+              <li>
+                <i id="icon" class="fa-solid fa-futbol"></i>
+                <span>Football</span>
+              </li>
+              <li>
+                <i id="icon" class="fa-solid fa-camera"></i>
+                <span>Photo</span>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Education" class="Education">
+      <div class="container mb-5" data-aos="zoom-in-up" data-aos-duration="1100" data-aos-offset="5">
+      <div class="content-section">
+          <h3>Education</h3>
+          <div class="row justify-content-between pt-4">
+            <div class="col-4">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-school fa-lg" style="color: #00050a;"></i>
+              </div>
+              <h4>SD Negeri 4</h4>
+              <span>2013-2019</span>
+              <p>Elementary School is the initial stage in my educational journey, where I began to build the foundations of knowledge and skills that would shape my future. This experience provided a solid foundation for my ongoing educational journey, and I am always grateful for that groundwork.</p>
+          </div>
+          <div class="col-4">
+            <div class="icon-wrapper">
+                 <i class="fa-solid fa-school fa-lg" style="color: #00050a;"></i>
+            </div>
+            <h4>SMPN 187 Jakarta</h4>
+            <span>2019-2022</span>
+            <p>Junior High School education (SMP) is a crucial phase in my educational development. The experience in junior high school also involves social growth and the development of independence. I began to understand values such as cooperation, integrity, and discipline. It is education that contributes to the future.</p>
+        </div>
+        <div class="col-4">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-school fa-lg" style="color: #00050a;"></i>
+          </div>
+          <h4>SMKN 4 Tangerang</h4>
+          <span>2013-2019</span>
+          <p>During my time in vocational high school (SMK), I pursued my interest by choosing the Software Engineering (RPL) major. This school has equipped me with strong technical skills and knowledge in software engineering. It's a highly valuable foundation for my career in the world of information technology and software development.</p>
+      </div>
+          </div>
+          </div>
+      </div>
+    </div>
+</section>
+<!--Akhir About-->
+<!--Skills-->
+<section class="skills" id="skills">
+  <div class="container mb-5">
+    <h1>My<span1> Skills</span></h1>
+    <p data-aos="fade-up" data-aos-duration="1100">This section summarizes the various skills I possess, encompassing various aspects of both my personal life. These skills serve as the foundation for carrying out daily tasks, pursuing goals, and contributing to my career development. In my view, these skills are a crucial foundation that supports personal and professional success. I am always excited to continue learning and honing these skills in order to achieve better results in the future.</p>
+    <div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="1100">
+    <div class="col-6" style="margin-top: 1px;">
+    <h2>HTML  <i class="fa-brands fa-html5" style="color: #ed0707;"></i></h2>
+    <div class="progress-bar">
+      <div class="html"><span>50%</span></div>
+    </div>
+    <h2>CSS  <i class="fa-brands fa-css3-alt" style="color: #0151da;"></i></h2>
+    <div class="progress-bar">
+      <div class="css"><span>50%</span></div>
+    </div>
+    <h2 style="margin-top: 43px;">JavaScript <i class="fa-brands fa-square-js" style="color: #fef501;"></i></h2>
+    <div class="progress-bar">
+      <div class="javascript"><span>50%</span></div>
+    </div>
+    </div>
+    <div class="col-6" style="margin-top: -3.5px;">
+      <h2>CorelDraw <i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+        <linearGradient id="AMqdbwFXbt1rRZunQ5Enta_9kTbRIN6cDXX_gr1" x1="27.068" x2="23.068" y1="7.254" y2="29.087" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#80e81f"></stop><stop offset=".339" stop-color="#67d326"></stop><stop offset="1" stop-color="#088242"></stop></linearGradient><path fill="url(#AMqdbwFXbt1rRZunQ5Enta_9kTbRIN6cDXX_gr1)" d="M30,42H18c-6.627,0-12-5.373-12-12V18c0-6.627,5.373-12,12-12h24v24 C42,36.627,36.627,42,30,42z"></path><rect width="36" height="6" x="6" y="26" opacity=".05"></rect><rect width="36" height="6" x="6" y="27" opacity=".07"></rect><linearGradient id="AMqdbwFXbt1rRZunQ5Entb_9kTbRIN6cDXX_gr2" x1="23.524" x2="24.024" y1="41.334" y2="28.501" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#80e81f"></stop><stop offset=".258" stop-color="#71df21"></stop><stop offset="1" stop-color="#05a333"></stop></linearGradient><path fill="url(#AMqdbwFXbt1rRZunQ5Entb_9kTbRIN6cDXX_gr2)" d="M30,42H18c-6.627,0-12-5.373-12-12v-2h36v2C42,36.627,36.627,42,30,42z"></path><path d="M34.464,30.528L34.464,30.528l-0.347-1.965L17.95,12.396c-0.756-0.756-2.074-0.756-2.828,0	l-3.536,3.535C11.208,16.309,11,16.812,11,17.347c0,0.534,0.208,1.036,0.586,1.412l16.171,16.172l7.709,1.289L34.464,30.528z" opacity=".05"></path><path d="M33.652,28.806L17.596,12.749c-0.567-0.566-1.556-0.566-2.121,0l-3.536,3.535	c-0.284,0.283-0.439,0.661-0.439,1.062c0,0.401,0.156,0.777,0.439,1.06l16.058,16.059l2.775,0.465l0-0.001l4.078,0.682	L33.652,28.806z" opacity=".07"></path><linearGradient id="AMqdbwFXbt1rRZunQ5Entc_9kTbRIN6cDXX_gr3" x1="26.625" x2="21.625" y1="22.458" y2="27.458" gradientUnits="userSpaceOnUse"><stop offset=".305" stop-color="#f5fcff"></stop><stop offset=".704" stop-color="#d3e6d3"></stop><stop offset=".865" stop-color="#a4cba5"></stop></linearGradient><path fill="url(#AMqdbwFXbt1rRZunQ5Entc_9kTbRIN6cDXX_gr3)" d="M33.812,32.595L34.236,35l-2.423-0.405L33.812,32.595z M12.293,18.052l15.945,15.945	l2.363,0.395l3-3l-0.413-2.345L17.243,13.102c-0.391-0.391-1.024-0.391-1.414,0l-3.536,3.536	C11.902,17.028,11.902,17.662,12.293,18.052z"></path>
+        </svg></i></h2>
+      <div class="progress-bar">
+        <div class="corel"><span>50%</span></div>
+      </div>
+      <h2>Office <i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+        <linearGradient id="Yjxgqidz2JT1PABcYtFE5a_vIbsCQXkSp6l_gr1" x1="31.645" x2="31.645" y1="6.839" y2="40.615" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#e68e00"></stop><stop offset=".036" stop-color="#e38400"></stop><stop offset=".171" stop-color="#db6200"></stop><stop offset=".299" stop-color="#d44a00"></stop><stop offset=".417" stop-color="#d03b00"></stop><stop offset=".515" stop-color="#cf3600"></stop><stop offset=".878" stop-color="#d22900"></stop><stop offset="1" stop-color="#d42400"></stop></linearGradient><path fill="url(#Yjxgqidz2JT1PABcYtFE5a_vIbsCQXkSp6l_gr1)" d="M35.883,7.341C37.726,7.85,39,9.508,39,11.397v25.162c0,1.906-1.301,3.57-3.168,4.065	L24.29,43.863L28,36V11l-3.148-6.885L35.883,7.341z"></path><linearGradient id="Yjxgqidz2JT1PABcYtFE5b_vIbsCQXkSp6l_gr2" x1="13.922" x2="29.051" y1="34.951" y2="41.073" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f52537"></stop><stop offset=".293" stop-color="#f32536"></stop><stop offset=".465" stop-color="#ea2434"></stop><stop offset=".605" stop-color="#dc2231"></stop><stop offset=".729" stop-color="#c8202c"></stop><stop offset=".841" stop-color="#ae1e25"></stop><stop offset=".944" stop-color="#8f1a1d"></stop><stop offset="1" stop-color="#7a1818"></stop></linearGradient><path fill="url(#Yjxgqidz2JT1PABcYtFE5b_vIbsCQXkSp6l_gr2)" d="M28,35v3.927c0,3.803-3.824,6.249-7.019,4.491l-6.936-4.445	c-0.802-0.466-1.236-1.462-0.964-2.457C13.334,35.59,14.202,35,15.115,35H28z"></path><linearGradient id="Yjxgqidz2JT1PABcYtFE5c_vIbsCQXkSp6l_gr3" x1="5.382" x2="25.874" y1="32.289" y2="1.78" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#d96ab1"></stop><stop offset=".137" stop-color="#d9538b"></stop><stop offset=".495" stop-color="#d91a2a"></stop><stop offset=".575" stop-color="#d31a29"></stop><stop offset=".68" stop-color="#c21926"></stop><stop offset=".8" stop-color="#a71821"></stop><stop offset=".929" stop-color="#811619"></stop><stop offset="1" stop-color="#691515"></stop></linearGradient><path fill="url(#Yjxgqidz2JT1PABcYtFE5c_vIbsCQXkSp6l_gr3)" d="M21.946,4.526l-11.924,6.786C8.772,12.024,8,13.351,8,14.789v18.429	c0,1.357,1.459,2.215,2.645,1.554l4.472-2.491C15.662,31.978,16,31.402,16,30.778V17.743c0-1.307,0.78-2.48,1.963-2.949L28,11.308	v-3.09C28,5.014,24.669,2.983,21.946,4.526z"></path>
+        </svg></i></h2>
+      <div class="progress-bar">
+        <div class="office"><span>50%</span></div>
+      </div>
+      <h2>Canva <i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+        <linearGradient id="N8aMJ-jZ4-cfldZrsnvhda_iWw83PVcBpLw_gr1" x1="38.263" x2="10.15" y1="1373.62" y2="1342.615" gradientTransform="translate(0 -1333.89)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#823af3"></stop><stop offset=".36" stop-color="#4b66e1"></stop><stop offset=".906" stop-color="#01f1c4"></stop></linearGradient><path fill="url(#N8aMJ-jZ4-cfldZrsnvhda_iWw83PVcBpLw_gr1)" fill-rule="evenodd" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24	S12.955,4,24,4S44,12.955,44,24z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M29.194,26.962c-0.835,0.915-2.007,1.378-2.556,1.378	c-0.635,0-0.982-0.389-1.053-0.974c-0.024-0.224-0.016-0.45,0.024-0.673c0.21-1.31,0.692-2.124,0.662-2.372	c-0.009-0.071-0.049-0.106-0.101-0.106c-0.406,0-1.83,1.47-2.046,2.443l-0.168,0.779c-0.11,0.549-0.648,0.902-1.018,0.902	c-0.177,0-0.311-0.088-0.334-0.283c-0.007-0.089,0-0.178,0.021-0.266l0.079-0.41c-0.768,0.574-1.596,0.962-1.984,0.962	c-0.53,0-0.827-0.283-0.933-0.709c-0.35,0.461-0.813,0.709-1.306,0.709c-0.63,0-1.237-0.417-1.528-1.034	c-0.415,0.466-0.907,0.922-1.496,1.299c-0.869,0.55-1.836,0.992-2.982,0.992c-1.058,0-1.956-0.566-2.453-1.026	c-0.737-0.69-1.126-1.718-1.241-2.656c-0.362-2.957,1.438-6.834,4.227-8.533c0.64-0.39,1.357-0.584,2.008-0.584	c1.34,0,2.34,0.958,2.48,2.104c0.126,1.032-0.286,1.924-1.431,2.501c-0.584,0.296-0.874,0.282-0.965,0.141	c-0.061-0.094-0.026-0.254,0.091-0.351c1.076-0.899,1.096-1.637,0.97-2.677c-0.082-0.669-0.522-1.098-1.016-1.098	c-2.115,0-5.149,4.745-4.727,8.197c0.165,1.346,0.99,2.904,2.682,2.904c0.564,0,1.162-0.159,1.694-0.425	c0.928-0.474,1.453-0.85,1.98-1.464c-0.13-1.596,1.24-3.6,3.278-3.6c0.882,0,1.612,0.354,1.698,1.062	c0.108,0.885-0.646,1.062-0.928,1.062c-0.247,0-0.643-0.071-0.671-0.301c-0.03-0.248,0.534-0.106,0.464-0.673	c-0.043-0.354-0.411-0.478-0.763-0.478c-1.269,0-1.97,1.77-1.835,2.869c0.061,0.496,0.315,0.991,0.774,0.991	c0.37,0,0.904-0.531,1.109-1.31c0.13-0.531,0.632-0.885,1.003-0.885c0.194,0,0.328,0.088,0.352,0.283	c0.008,0.071,0.002,0.16-0.021,0.266c-0.042,0.23-0.219,0.996-0.21,1.154c0.006,0.138,0.086,0.328,0.326,0.328	c0.19,0,0.89-0.378,1.538-0.958c0.203-1.051,0.454-2.351,0.474-2.454c0.079-0.426,0.232-0.865,1.096-0.865	c0.177,0,0.311,0.088,0.337,0.301c0.008,0.07,0.002,0.16-0.021,0.266l-0.242,1.093c0.758-1.01,1.936-1.752,2.642-1.752	c0.3,0,0.531,0.158,0.57,0.478c0.022,0.178-0.03,0.478-0.147,0.814c-0.251,0.69-0.533,1.727-0.72,2.62	c-0.04,0.19,0.026,0.476,0.373,0.476c0.277,0,1.166-0.339,1.885-1.288c-0.005-0.134-0.007-0.27-0.007-0.408	c0-0.744,0.053-1.346,0.194-1.787c0.141-0.461,0.723-0.902,1.11-0.902c0.194,0,0.335,0.106,0.335,0.318	c0,0.071-0.018,0.16-0.053,0.248c-0.264,0.779-0.405,1.506-0.405,2.231c0,0.407,0.088,1.062,0.177,1.398	c0.018,0.071,0.034,0.142,0.105,0.142c0.123,0,0.952-0.814,1.551-1.806c-0.53-0.337-0.829-0.956-0.829-1.718	c0-1.274,0.758-1.93,1.498-1.93c0.582,0,1.11,0.425,1.11,1.274c0,0.532-0.212,1.134-0.51,1.718c0,0,0.123,0.018,0.176,0.018	c0.458,0,0.811-0.213,1.006-0.443c0.088-0.1,0.17-0.178,0.248-0.224c0.59-0.713,1.455-1.228,2.47-1.228	c0.864,0,1.61,0.337,1.696,1.045c0.11,0.902-0.661,1.08-0.926,1.08c-0.264,0-0.661-0.071-0.689-0.301s0.551-0.106,0.484-0.654	c-0.043-0.354-0.413-0.496-0.766-0.496c-1.182,0-1.994,1.576-1.838,2.85c0.062,0.514,0.299,1.01,0.758,1.01	c0.37,0,0.923-0.532,1.127-1.31c0.131-0.514,0.632-0.885,1.002-0.885c0.176,0,0.328,0.088,0.354,0.301	c0.013,0.106-0.03,0.337-0.227,1.168c-0.081,0.354-0.097,0.655-0.066,0.903c0.063,0.514,0.298,0.85,0.516,1.045	c0.079,0.07,0.126,0.158,0.132,0.213c0.017,0.142-0.091,0.266-0.267,0.266c-0.053,0-0.123,0-0.181-0.035	c-0.908-0.372-1.285-0.991-1.391-1.576c-0.35,0.442-0.814,0.69-1.29,0.69c-0.811,0-1.603-0.709-1.715-1.629	c-0.046-0.378-0.001-0.785,0.123-1.184c-0.329,0.203-0.683,0.316-1.001,0.316c-0.106,0-0.194,0-0.299-0.018	c-0.793,1.15-1.622,1.947-2.257,2.302c-0.264,0.142-0.51,0.213-0.687,0.213c-0.142,0-0.3-0.035-0.37-0.159	C29.367,27.91,29.258,27.474,29.194,26.962L29.194,26.962z M32.067,23.191c0,0.496,0.246,1.01,0.564,1.346	c0.124-0.337,0.194-0.673,0.194-1.01c0-0.638-0.247-0.921-0.441-0.921C32.155,22.606,32.067,22.926,32.067,23.191z" clip-rule="evenodd"></path>
+        </svg></i></h2>
+      <div class="progress-bar">
+        <div class="canva"><span>50%</span></div>
+      </div>
+  </div>
+  </div>
+</section>
+<!--Akhir skills-->
+<!--Portofolio-->
+<section class="portofolio" id="portofolio">
+  <div class="container">
+    <h1>My<span1> Portofolio</span></h1>
+    <div class="row" id="these">
+    <div class="col" data-aos="flip-up" data-aos-duration="1100">
+    <div class="galeri">
+      <div class="project">
+          <img src="img/credit.png" alt="">
+          <div class="overlay">
+              <h3>Home Credit Web</h3>
+              <div class="btn-container">
+              <a href=" https://dinoarr.github.io/home-credit/"><button>See Project</button></a>
+            </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <div class="col" data-aos="flip-up" data-aos-duration="1100">
+    <div class="galeri">
+      <div class="project">
+          <img src="img/web.png" alt="">
+          <div class="overlay">
+              <h3>Website RPL</h3>
+              <div class="btn-container">
+              <a href="https://dinoarr.github.io/web-rpl/"><button>See Project</button></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <div class="col"  data-aos="flip-up" data-aos-duration="1100">
+    <div class="galeri">
+      <div class="project">
+          <img src="img/animasi.png" alt="">
+          <div class="overlay">
+              <h3>Car Animation</h3>
+              <div class="btn-container">
+              <a href="img/animasi 1.mp4"><button>See Project</button></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+<div class="row justify-content-center" id="these" data-aos="fade-up" data-aos-duration="1100">
+  <div class="col-5">
+    <div class="galeri">
+      <div class="project">
+          <img src="img/serti2.png" alt="">
+          <div class="overlay">
+              <h3>My Certificate</h3>
+              <div class="btn-container">
+              <a href="pdf/Skilvul-SkilBadge-CSS Dasar.pdf"><button>See Project</button></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <div class="col-5">
+    <div class="galeri">
+      <div class="project">
+          <img src="img/serti1.png" alt="">
+          <div class="overlay">
+              <h3>My Certificate</h3>
+              <div class="btn-container">
+              <a href="pdf/Skilvul-SkilBadge-HTML Dasar.pdf"><button>See Project</button></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!--akhir portof-->
+<!--contact-->
+<section class="contact" id="contact">
+  <div class="container mb-5">
+    <h1>Contact <span1>Me</span></h1>
+    <div class="row" id="map" data-aos="zoom-in-down" data-aos-duration="1100">
+    <div class="col">
+    <div class="login-box">
+      <p>Send Me</p>
+      <form>
+        <div class="user-box">
+          <input required="" name="" type="text">
+          <label>Name</label>
+        </div>
+
+        <div class="user-box">
+          <input required="" name="" type="email">
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input required="" name="" type="email">
+          <label>Massage</label>
+        </div>
+        <a href="mailto:dinoananda.restyanto@gmail.com">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+  </div>
+    <div class="col">
+      <div class="maps-box">
+        <iframe class="rounded-2 " src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d162800.93710903343!2d106.6203923404588!3d-6.207055481923871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTAnNDAuNSJTIDEwNsKwNDEnNDMuMyJF!5e0!3m2!1sid!2sid!4v1697197288311!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+      </div>
+  </div>
+</div>
+</section>
+
+<footer>
+  <a href="#home" class="up">
+      <i class="fa-solid fa-angles-up"></i>
+  </a>
+  <span>&copy; Dino Ananda Restyanto 2023</span>
+</footer>
+<script src="bootstrap/js/bootstrap.bundle.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="main.js"></script>
+<script>AOS.init();</script>
+<script>
+  anime({
+  targets: "#logo path",
+  strokeDashoffset: [anime.setDashoffset,0],
+  easing: 'easeInOutSine',
+  duration: 1500,
+  delay: function(el, i) { return i * 500 },
+  direction: 'alternate',
+  loop: false
+});
+</script>
+</body>
+</html>
