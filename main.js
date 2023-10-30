@@ -1,5 +1,5 @@
 new Typed('#typed',{
-    strings : ['Student Of SMKN 4 Tangerang','Web Developer'],
+    strings : ['Student Of SMKN 4 Tangerang'],
     typeSpeed : 60,
     backDelay: 2500,
     loop : true,
